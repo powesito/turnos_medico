@@ -262,11 +262,7 @@ con `DB_ENGINE=django.db.backends.sqlite3` y `DB_NAME=db.sqlite3`).
 Django solo los usa cuando `DEBUG=False`. Para probarlo, pon `DEBUG=False` en el `.env`,
 levanta el servidor con `runserver --insecure` y visita una URL inexistente.
 
-## Próximos pasos sugeridos
 
-- Autenticación en la API (token/JWT) y permisos por rol.
-- Notificaciones por correo/SMS al confirmar o cancelar un turno.
-- Recordatorios automáticos (Celery + cron).
 
 ## Notas técnicas
 
