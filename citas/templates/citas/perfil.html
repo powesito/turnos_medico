@@ -1,0 +1,13 @@
+{% extends 'citas/base.html' %}
+{% block title %}Mi perfil · Turnos Médicos{% endblock %}
+{% block content %}
+<h1 class="mb-4">Mi perfil</h1>
+<div class="card shadow-sm" style="max-width: 560px;">
+    <div class="card-body">
+        <p class="mb-1"><strong>Usuario:</strong> {{ usuario.username }}</p>
+        <p class="mb-1"><strong>Correo:</strong> {{ usuario.email|default:"—" }}</p>
+        <p class="mb-1"><strong>Último acceso:</strong> {{ usuario.last_login|date:"d/m/Y H:i" }}</p>
+        <p class="mb-0"><strong>Staff:</strong> {{ usuario.is_staff|yesno:"Sí,No" }}</p>
+    </div>
+</div>
+{% endblock %}
